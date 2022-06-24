@@ -1,0 +1,17 @@
+@use "constants";
+@use "section2";
+@use "pie";
+@use "contact";
+@use "members";
+
+.nav--droite {
+  background-color: salmon;
+  align-items: flex-end;
+  padding: auto;
+  color: blue;
+}
+
+.contact {
+  display: flex;
+  background-color: rgb(27, 25, 181) (4, 0, 255);
+}

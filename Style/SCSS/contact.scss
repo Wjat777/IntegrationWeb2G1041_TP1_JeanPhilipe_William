@@ -1,0 +1,18 @@
+.contact__container {
+  position: relative;
+}
+.contact_carte__container {
+  position: relative;
+}
+
+.contact_form__container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 99;
+  margin-left: 499px;
+  background-color: white;
+  border: black 1px solid;
+  padding: 12px;
+  border-radius: 12px;
+}
