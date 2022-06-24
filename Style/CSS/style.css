@@ -37,6 +37,155 @@
   object-fit: cover;
 }
 
+.pieContainer {
+  height: 150px;
+  position: relative;
+}
+
+.pieBackground {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.pie {
+  transition: all 1s;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  clip: rect(0px, 75px, 150px, 0px);
+}
+
+.hold {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+#pieSlice1 .pie {
+  background-color: #1b458b;
+  transform: rotate(30deg);
+}
+
+#pieSlice2 {
+  transform: rotate(30deg);
+}
+
+#pieSlice2 .pie {
+  background-color: #0a0;
+  transform: rotate(60deg);
+}
+
+#pieSlice3 {
+  transform: rotate(90deg);
+}
+
+#pieSlice3 .pie {
+  background-color: #f80;
+  transform: rotate(120deg);
+}
+
+#pieSlice4 {
+  transform: rotate(210deg);
+}
+
+#pieSlice4 .pie {
+  background-color: #08f;
+  transform: rotate(10deg);
+}
+
+#pieSlice5 {
+  transform: rotate(220deg);
+}
+
+#pieSlice5 .pie {
+  background-color: #a04;
+  transform: rotate(70deg);
+}
+
+#pieSlice6 {
+  transform: rotate(290deg);
+}
+
+#pieSlice6 .pie {
+  background-color: #ffd700;
+  transform: rotate(70deg);
+}
+
+.innerCircle {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: #444;
+  border-radius: 100%;
+  top: 15px;
+  left: 15px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5) inset;
+  color: white;
+}
+
+.innerCircle .content {
+  position: absolute;
+  display: block;
+  width: 120px;
+  top: 30px;
+  left: 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.contact__container {
+  position: relative;
+}
+
+.contact_carte__container {
+  position: relative;
+}
+
+.contact_form__container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 99;
+  margin-left: 499px;
+  background-color: white;
+  border: black 1px solid;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.card {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.member__body--min-height {
+  min-height: 32rem;
+}
+
+.member__profile {
+  top: -50px;
+  left: 0;
+}
+.member__profile img {
+  width: 100px;
+  height: 100px;
+}
+
 .nav--droite {
   background-color: salmon;
   align-items: flex-end;
@@ -46,5 +195,5 @@
 
 .contact {
   display: flex;
-  background-color: red;
-}/*# sourceMappingURL=style.css.map */
+  background-color: rgb(27, 25, 181) 4, 0, 255;
+}
