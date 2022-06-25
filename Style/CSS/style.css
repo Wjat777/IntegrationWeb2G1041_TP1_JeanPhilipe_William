@@ -149,14 +149,14 @@
 
 .contact_form__container {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 10%;
+  left: 52%;
   z-index: 99;
-  margin-left: 499px;
-  background-color: white;
+  background-color: rgb(202, 197, 197);
   border: black 1px solid;
   padding: 12px;
   border-radius: 12px;
+  max-width: calc(30rem - 5px);
 }
 
 .card {
@@ -195,10 +195,51 @@
 
 .contact {
   display: flex;
-  background-color: rgb(27, 25, 181) 4, 0, 255;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
 
 .footer {
-  background-color: red;
-  margin: 120px;
+  align-items: center;
+}
+
+.contactUs {
+  display: flex;
+}
+
+.contact i {
+  padding: 0.2rem;
+}
+
+.finalLogo {
+  width: 10rem;
+}
+
+.logo {
+  display: grid;
+  place-content: center;
+}
+
+.endMenu ul {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none !important;
+}
+
+.endMenu li {
+  padding: 1rem;
+}
+
+.nomPrenom {
+  display: flex;
+}
+
+.btn-primary {
+  width: 25%;
+  margin: 1rem;
 }
