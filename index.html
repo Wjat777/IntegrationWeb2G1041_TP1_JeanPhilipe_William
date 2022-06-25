@@ -4,412 +4,465 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/svg-with-js.min.css"
-      integrity="sha512-W3ZfgmZ5g1rCPFiCbOb+tn7g7sQWOQCB1AkDqrBG1Yp3iDjY9KYFh/k1AWxrt85LX5BRazEAuv+5DV2YZwghag=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="/Style/CSS/style.css" />
-    <title>Final Fantasy VI</title>
-  </head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0 justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/svg-with-js.min.css"
+    integrity="sha512-W3ZfgmZ5g1rCPFiCbOb+tn7g7sQWOQCB1AkDqrBG1Yp3iDjY9KYFh/k1AWxrt85LX5BRazEAuv+5DV2YZwghag=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/Style/CSS/style.css" />
+  <title>Final Fantasy VI</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false"> Dropdown </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <hr />
+  <section class="banniere-slider">
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets\images\banner1.webp" class="d-block w-80" alt="banner1" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets\images\banner2.webp" class="d-block w-80" alt="banner2" />
+          </div>
+          <div class="carousel-item">
+            <img src="assets\images\banner3.jpg" class="d-block w-80" alt="banner3" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="separateur" />
+  <section class="recherche">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <label>Recherche</label>
+          <input type="search" />
+
+          <button class="btn btn-primary"><span style="color: red">R</span>echercher</button>
+        </div>
+
+        <div class="recherche__citation">
+          <h3>Citation</h3>
+
+          <p>« Quand les choses tombent, elles tombent ! Tout est une question de destin... »</p>
+          <button class="btn btn-secondary"><span style="color: red">?</span></button>
+        </div>
+
+        <div class="col-3"></div>
+      </div>
+    </div>
+  </section>
+  <hr class="separateur" />
+  <!-- flexbox section -->
+  <section class="section1">
+    <div class="d-flex flex-row mb-3">
+      <div class="p-2">
+        <div class="card" style="width: 18rem">
+          <img src="assets\images\card1.webp" class="card-img-top" alt="card1" />
+          <div class="card-body">
+            <h5 class="card-title">FF VI - 1</h5>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, mollitia?</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2">
+        <div class="card" style="width: 18rem">
+          <img src="assets\images\card1.webp" class="card-img-top" alt="card1" />
+          <div class="card-body">
+            <h5 class="card-title">FF VI - 1</h5>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, mollitia?</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2">
+        <div class="card" style="width: 18rem">
+          <img src="assets\images\card1.webp" class="card-img-top" alt="card1" />
+          <div class="card-body">
+            <h5 class="card-title">FF VI - 1</h5>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, mollitia?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="separateur" />
+  <!-- gallerie section grid-->
+  <section class="section2">
+    <div class="section2__grid">
+      <div class="section2__img1"><img src="assets\images\banner3.jpg" class="gallery__img" alt="grid1" /></div>
+      <div class="section2__img2"><img src="assets\images\banner3.jpg" class="gallery__img" alt="grid2" /></div>
+      <div class="section2__img3"><img src="assets\images\banner3.jpg" class="gallery__img" alt="grid3" /></div>
+      <div class="section2__img4"><img src="assets\images\banner3.jpg" class="gallery__img" alt="grid4" /></div>
+      <div class="section2__img5"><img src="assets\images\banner3.jpg" class="gallery__img" alt="grid5" /></div>
+      <div class="section2__img6"><img src="assets\images\banner3.jpg" class="gallery__img" alt="grid6" /></div>
+    </div>
+  </section>
+  <hr class="separateur" />
+  <!-- statistique-->
+  <section class="statistique">
+    <h2>Statistics</h2>
+    <div class="pieContainer">
+      <div class="pieBackground"></div>
+      <div id="pieSlice1" class="hold">
+        <div class="pie"></div>
+      </div>
+      <div id="pieSlice2" class="hold">
+        <div class="pie"></div>
+      </div>
+      <div id="pieSlice3" class="hold">
+        <div class="pie"></div>
+      </div>
+      <div id="pieSlice4" class="hold">
+        <div class="pie"></div>
+      </div>
+      <div id="pieSlice5" class="hold">
+        <div class="pie"></div>
+      </div>
+      <div id="pieSlice6" class="hold">
+        <div class="pie"></div>
+      </div>
+      <div class="innerCircle">
+        <div class="content"><b>Data</b><br />from 16<sup>th</sup> April, 2014</div>
+      </div>
+    </div>
+  </section>
+  <hr class="separateur" />
+  <!-- cards-->
+
+  <section class="team-section py-5">
+    <h2>Personnages</h2>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-3">
+          <div class="card border-0 shadow-lg pt-5 my-5 position-relative">
+            <div class="card-body member__body--min-height p-4">
+              <div class="member__profile position-absolute w-100 text-center">
+                <img class="rounded-circle mx-auto d-inline-block shadow-sm"
+                  src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" />
+              </div>
+              <div class="card-text pt-1">
+                <h5 class="member-name mb-0 text-center text-primary font-weight-bold">John Lynch</h5>
+                <div class="mb-3 text-center">Co-founder / CEO</div>
+                <div>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Vivamus
+                  eget eros vestibulum, accumsan ante
+                  viverra, condimentum tellus. Curabitur pellentesque convallis purus non ornare. Donec bibendum sed
+                  purus dignissim rutrum. Maecenas bibendum
+                  feugiat est, et venenatis nunc.
+                </div>
+              </div>
+            </div>
+            <!--//card-body-->
+            <div class="card-footer theme-bg-primary border-0 text-center">
+              <ul class="social-list list-inline mb-0 mx-auto">
+                <li class="list-inline-item">
+                  <a class="text-dark" href="#">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="text-dark" href="#">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="text-dark" href="#">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                </li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <hr />
-    <section class="banniere-slider">
-      <div class="container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="assets\images\banner1.webp" class="d-block w-80" alt="banner1" />
+              <!--//social-list-->
             </div>
-            <div class="carousel-item">
-              <img src="assets\images\banner2.webp" class="d-block w-80" alt="banner2" />
-            </div>
-            <div class="carousel-item">
-              <img src="assets\images\banner3.jpg" class="d-block w-80" alt="banner3" />
-            </div>
+            <!--//card-footer-->
           </div>
+          <!--//card-->
         </div>
-      </div>
-    </section>
-    <hr class="separateur" />
-    <section class="recherche">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-3"></div>
-          <div class="col-6">
-            <label>Recherche</label>
-            <input type="search" />
+        <!--//col-->
 
-            <button class="btn btn-primary"><span style="color: red">R</span>echercher</button>
-          </div>
-
-          <div class="recherche__citation">
-            <h3>Citation</h3>
-
-            <p>« Quand les choses tombent, elles tombent ! Tout est une question de destin... »</p>
-            <button class="btn btn-secondary"><span style="color: red">?</span></button>
-          </div>
-
-          <div class="col-3"></div>
-        </div>
-      </div>
-    </section>
-    <hr class="separateur" />
-    <!-- flexbox section -->
-    <section class="section1">
-      <div class="d-flex flex-row mb-3">
-        <div class="p-2">
-          <div class="card" style="width: 18rem">
-            <img src="assets\images\card1.webp" class="card-img-top" alt="card1" />
-            <div class="card-body">
-              <h5 class="card-title">FF VI - 1</h5>
-              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, mollitia?</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-2">
-          <div class="card" style="width: 18rem">
-            <img src="assets\images\card1.webp" class="card-img-top" alt="card1" />
-            <div class="card-body">
-              <h5 class="card-title">FF VI - 1</h5>
-              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, mollitia?</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-2">
-          <div class="card" style="width: 18rem">
-            <img src="assets\images\card1.webp" class="card-img-top" alt="card1" />
-            <div class="card-body">
-              <h5 class="card-title">FF VI - 1</h5>
-              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, mollitia?</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <hr class="separateur" />
-    <!-- gallerie section grid-->
-    <section class="section2">
-      <div class="section2__grid">
-        <div class="section2__img1"><img src="assets\images\banner3.jpg" class="gallery__img" alt="grid1" /></div>
-        <div class="section2__img2"><img src="assets\images\banner3.jpg" class="gallery__img" alt="grid2" /></div>
-        <div class="section2__img3"><img src="assets\images\banner3.jpg" class="gallery__img" alt="grid3" /></div>
-        <div class="section2__img4"><img src="assets\images\banner3.jpg" class="gallery__img" alt="grid4" /></div>
-        <div class="section2__img5"><img src="assets\images\banner3.jpg" class="gallery__img" alt="grid5" /></div>
-        <div class="section2__img6"><img src="assets\images\banner3.jpg" class="gallery__img" alt="grid6" /></div>
-      </div>
-    </section>
-    <hr class="separateur" />
-    <!-- statistique-->
-    <section class="statistique">
-      <h2>Statistics</h2>
-      <div class="pieContainer">
-        <div class="pieBackground"></div>
-        <div id="pieSlice1" class="hold"><div class="pie"></div></div>
-        <div id="pieSlice2" class="hold"><div class="pie"></div></div>
-        <div id="pieSlice3" class="hold"><div class="pie"></div></div>
-        <div id="pieSlice4" class="hold"><div class="pie"></div></div>
-        <div id="pieSlice5" class="hold"><div class="pie"></div></div>
-        <div id="pieSlice6" class="hold"><div class="pie"></div></div>
-        <div class="innerCircle">
-          <div class="content"><b>Data</b><br />from 16<sup>th</sup> April, 2014</div>
-        </div>
-      </div>
-    </section>
-    <hr class="separateur" />
-    <!-- cards-->
-
-    <section class="team-section py-5">
-      <h2>Personnages</h2>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-3">
-            <div class="card border-0 shadow-lg pt-5 my-5 position-relative">
-              <div class="card-body member__body--min-height p-4">
-                <div class="member__profile position-absolute w-100 text-center">
-                  <img class="rounded-circle mx-auto d-inline-block shadow-sm" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" />
-                </div>
-                <div class="card-text pt-1">
-                  <h5 class="member-name mb-0 text-center text-primary font-weight-bold">John Lynch</h5>
-                  <div class="mb-3 text-center">Co-founder / CEO</div>
-                  <div>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Vivamus eget eros vestibulum, accumsan ante
-                    viverra, condimentum tellus. Curabitur pellentesque convallis purus non ornare. Donec bibendum sed purus dignissim rutrum. Maecenas bibendum
-                    feugiat est, et venenatis nunc.
-                  </div>
+        <div class="col-12 col-md-3">
+          <div class="card border-0 shadow-lg pt-5 my-5 position-relative">
+            <div class="card-body member__body--min-height p-4">
+              <div class="member__profile position-absolute w-100 text-center">
+                <img class="rounded-circle mx-auto d-inline-block shadow-sm"
+                  src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" />
+              </div>
+              <div class="card-text pt-1">
+                <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Joe Thomas</h5>
+                <div class="mb-3 text-center">Co-founder / CTO</div>
+                <div>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Vivamus
+                  eget eros vestibulum, accumsan ante
+                  viverra, condimentum tellus. Curabitur pellentesque convallis purus non ornare. Donec bibendum sed
+                  purus dignissim rutrum. Maecenas bibendum
+                  feugiat est, et venenatis nunc.
                 </div>
               </div>
-              <!--//card-body-->
-              <div class="card-footer theme-bg-primary border-0 text-center">
-                <ul class="social-list list-inline mb-0 mx-auto">
-                  <li class="list-inline-item">
-                    <a class="text-dark" href="#">
-                      <i class="bi bi-facebook"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="text-dark" href="#">
-                      <i class="bi bi-instagram"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="text-dark" href="#">
-                      <i class="bi bi-twitter"></i>
-                    </a>
-                  </li>
-                </ul>
-                <!--//social-list-->
-              </div>
-              <!--//card-footer-->
             </div>
-            <!--//card-->
-          </div>
-          <!--//col-->
+            <!--//card-body-->
+            <div class="card-footer theme-bg-primary border-0 text-center">
+              <ul class="social-list list-inline mb-0 mx-auto">
+                <li class="list-inline-item">
+                  <a class="text-dark" href="#">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="text-dark" href="#">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="text-dark" href="#">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                </li>
+              </ul>
 
-          <div class="col-12 col-md-3">
-            <div class="card border-0 shadow-lg pt-5 my-5 position-relative">
-              <div class="card-body member__body--min-height p-4">
-                <div class="member__profile position-absolute w-100 text-center">
-                  <img class="rounded-circle mx-auto d-inline-block shadow-sm" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" />
-                </div>
-                <div class="card-text pt-1">
-                  <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Joe Thomas</h5>
-                  <div class="mb-3 text-center">Co-founder / CTO</div>
-                  <div>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Vivamus eget eros vestibulum, accumsan ante
-                    viverra, condimentum tellus. Curabitur pellentesque convallis purus non ornare. Donec bibendum sed purus dignissim rutrum. Maecenas bibendum
-                    feugiat est, et venenatis nunc.
-                  </div>
-                </div>
-              </div>
-              <!--//card-body-->
-              <div class="card-footer theme-bg-primary border-0 text-center">
-                <ul class="social-list list-inline mb-0 mx-auto">
-                  <li class="list-inline-item">
-                    <a class="text-dark" href="#">
-                      <i class="bi bi-facebook"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="text-dark" href="#">
-                      <i class="bi bi-instagram"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="text-dark" href="#">
-                      <i class="bi bi-twitter"></i>
-                    </a>
-                  </li>
-                </ul>
-
-                <!--//social-list-->
-              </div>
-              <!--//card-footer-->
+              <!--//social-list-->
             </div>
-            <!--//card-->
+            <!--//card-footer-->
           </div>
-          <!--//col-->
-
-          <div class="col-12 col-md-3">
-            <div class="card border-0 shadow-lg pt-5 my-5 position-relative">
-              <div class="card-body member__body--min-height p-4">
-                <div class="member__profile position-absolute w-100 text-center">
-                  <img class="rounded-circle mx-auto d-inline-block shadow-sm" src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="" />
-                </div>
-                <div class="card-text pt-1">
-                  <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Jean Torres</h5>
-                  <div class="mb-3 text-center">Marketing</div>
-                  <div>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Vivamus eget eros vestibulum, accumsan ante
-                    viverra, condimentum tellus.
-                  </div>
-                </div>
-              </div>
-              <!--//card-body-->
-              <div class="card-footer theme-bg-primary border-0 text-center">
-                <ul class="social-list list-inline mb-0 mx-auto">
-                  <li class="list-inline-item">
-                    <a class="text-dark" href="#">
-                      <i class="bi bi-facebook"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="text-dark" href="#">
-                      <i class="bi bi-instagram"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="text-dark" href="#">
-                      <i class="bi bi-twitter"></i>
-                    </a>
-                  </li>
-                </ul>
-
-                <!--//social-list-->
-              </div>
-              <!--//card-footer-->
-            </div>
-            <!--//card-->
-          </div>
-          <!--//col-->
-          <div class="col-12 col-md-3">
-            <div class="card border-0 shadow-lg pt-5 my-5 position-relative">
-              <div class="card-body member__body--min-height p-4">
-                <div class="member__profile position-absolute w-100 text-center">
-                  <img class="rounded-circle mx-auto d-inline-block shadow-sm" src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" />
-                </div>
-                <div class="card-text pt-1">
-                  <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Doris Meyer</h5>
-                  <div class="mb-3 text-center">Product Manager</div>
-                  <div>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Vivamus eget eros vestibulum, accumsan ante
-                    viverra, condimentum tellus.
-                  </div>
-                </div>
-              </div>
-              <!--//card-body-->
-              <div class="card-footer theme-bg-primary border-0 text-center">
-                <ul class="social-list list-inline mb-0 mx-auto">
-                  <li class="list-inline-item">
-                    <a class="text-dark" href="#">
-                      <i class="bi bi-facebook"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="text-dark" href="#">
-                      <i class="bi bi-instagram"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="text-dark" href="#">
-                      <i class="bi bi-twitter"></i>
-                    </a>
-                  </li>
-                </ul>
-                <!--//social-list-->
-              </div>
-              <!--//card-footer-->
-            </div>
-            <!--//card-->
-          </div>
+          <!--//card-->
         </div>
-        <!--//row-->
-      </div>
-    </section>
-    <hr class="separateur" />
-    <!-- contat-->
-    <section class="contact">
-      <div class="contact__container">
-        <div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d178790.956038735!2d-73.87038502740222!3d45.558196845287114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70d%3A0x654e3138211fefef!2zTW9udHLDqWFsLCBRQw!5e0!3m2!1sfr!2sca!4v1655940853359!5m2!1sfr!2sca"
-            width="800"
-            height="600"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-        <div class="contact_form__container">
-          <div class="form">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+        <!--//col-->
+
+        <div class="col-12 col-md-3">
+          <div class="card border-0 shadow-lg pt-5 my-5 position-relative">
+            <div class="card-body member__body--min-height p-4">
+              <div class="member__profile position-absolute w-100 text-center">
+                <img class="rounded-circle mx-auto d-inline-block shadow-sm"
+                  src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="" />
+              </div>
+              <div class="card-text pt-1">
+                <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Jean Torres</h5>
+                <div class="mb-3 text-center">Marketing</div>
+                <div>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Vivamus
+                  eget eros vestibulum, accumsan ante
+                  viverra, condimentum tellus.
+                </div>
+              </div>
             </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <!--//card-body-->
+            <div class="card-footer theme-bg-primary border-0 text-center">
+              <ul class="social-list list-inline mb-0 mx-auto">
+                <li class="list-inline-item">
+                  <a class="text-dark" href="#">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="text-dark" href="#">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="text-dark" href="#">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                </li>
+              </ul>
+
+              <!--//social-list-->
             </div>
+            <!--//card-footer-->
           </div>
+          <!--//card-->
+        </div>
+        <!--//col-->
+        <div class="col-12 col-md-3">
+          <div class="card border-0 shadow-lg pt-5 my-5 position-relative">
+            <div class="card-body member__body--min-height p-4">
+              <div class="member__profile position-absolute w-100 text-center">
+                <img class="rounded-circle mx-auto d-inline-block shadow-sm"
+                  src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" />
+              </div>
+              <div class="card-text pt-1">
+                <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Doris Meyer</h5>
+                <div class="mb-3 text-center">Product Manager</div>
+                <div>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Vivamus
+                  eget eros vestibulum, accumsan ante
+                  viverra, condimentum tellus.
+                </div>
+              </div>
+            </div>
+            <!--//card-body-->
+            <div class="card-footer theme-bg-primary border-0 text-center">
+              <ul class="social-list list-inline mb-0 mx-auto">
+                <li class="list-inline-item">
+                  <a class="text-dark" href="#">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="text-dark" href="#">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="text-dark" href="#">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                </li>
+              </ul>
+              <!--//social-list-->
+            </div>
+            <!--//card-footer-->
+          </div>
+          <!--//card-->
         </div>
       </div>
-    </section>
-    <hr class="separateur" />
-    <!-- contat-->
-    <footer class="footer">
-      <div class="contact">
+      <!--//row-->
+    </div>
+  </section>
+  <hr class="separateur" />
+  <!-- contat-->
+  <section class="contact">
+    <div class="contact__container  container-fluid ">
+      <div >
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d178790.956038735!2d-73.87038502740222!3d45.558196845287114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70d%3A0x654e3138211fefef!2zTW9udHLDqWFsLCBRQw!5e0!3m2!1sfr!2sca!4v1655940853359!5m2!1sfr!2sca"
+          width="100%" height="800rem" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="contact_form__container">
+        <h3>Un formulaire</h3>
+        <p>Lorem ipsum dolor, sit elit. Fugiat maiores quia odio.</p>
+        <form class="row" id="formulaire">
+
+          <div class=" col-md-6 mb-3">
+
+            <label for="nom" class="form-label "></label>
+
+            <input type="text" class="form-control col-md-6 " id="nom" name="nom"
+              placeholder="Nom de famille" />
+          </div>
+
+          <div class="col-md-6 mb-3 ">
+            <label for="prenom" class="form-label " form="prenom"></label>
+            <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Prénom" />
+            
+          </div>
+          <div class="mb-3">
+          <input type="email" class="form-control  col-md-12 " id="exampleFormControlInput1" placeholder="Email" />
+        </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="message" rows="3"></textarea>
+          </div>
+          <input class="btn btn-primary" type="submit" value="Submit">
+          
+        </form>
+      </div>
+     
+     
+    
+    </div>
+  </section>
+  
+  <hr class="separateur" />
+  <!-- contat-->
+
+    <footer class="footer container-fluid">
+ 
+      <div class="logo">
+        <img src="assets\images\final-logo.webp" alt="Final Fantasy Logo" class="finalLogo"\>
+
+      </div>
+      <div class="endMenu">
+      <ul class="d-flex flex-row flex-wrap mb-3">
+        <a href="#">
+          <li>About us</li>
+        </a>
+        <a href="#">
+          <li>Features</li>
+        </a>
+        <a href="#">
+          <li>Pricing</li>
+        </a>
+        <a href="#">
+          <li>Career</li>
+        </a>
+        <a href="#">
+          <li>FAQs</li>
+        </a>
+        <a href="#">
+          <li>Privacy Policy</li>
+        </a>
+
+        </ul>
+      </div>
+
+      <div class="contact footer">
         <p>Fait par Jean-Philippe et William</p>
-        <div class="icons"><i class="bi bi-facebook"></i><i class="bi bi-instagram"></i><i class="bi bi-twitter"></i><i class="bi bi-linkedin"></i></div>
-        <div class="contacUs">
+        <div class="icons"><i class="bi bi-facebook"></i><i class="bi bi-instagram"></i><i class="bi bi-twitter"></i><i
+            class="bi bi-linkedin"></i></div>
+        <div class="contactUs">
           <p><i class="bi bi-telephone-fill"></i><a href="tel:+4733378901">+47 333 78 901</a></p>
           <p><i class="bi bi-envelope"> </i><a href="mailto:webmaster@example.com">Jon Doe</a></p>
         </div>
       </div>
+    
     </footer>
-    <hr class="separateur" />
 
-    <!--  -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <hr class="separateur" />
+
+  <!--  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>

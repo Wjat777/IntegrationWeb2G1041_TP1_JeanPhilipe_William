@@ -8,12 +8,12 @@
 
 .contact_form__container {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 10%;
+  left: 52%;
   z-index: 99;
-  margin-left: 499px;
-  background-color: white;
+  background-color: rgb(202, 197, 197);
   border: black 1px solid;
   padding: 12px;
   border-radius: 12px;
+  max-width: calc(30rem - 5px);
 }
