@@ -49,14 +49,15 @@
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-          </li>  <li class="nav-item">
+          </li>
+          <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Menu 3</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Menu 4</a>
           </li>
-          
-          
+
+
         </ul>
       </div>
     </div>
@@ -64,7 +65,7 @@
   <hr />
   <section class="banniere-slider container-fluid">
     <div class="container">
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div id="carouselExampleIndicators" class="carousel slide carousel-dark slide" data-bs-ride="true">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -75,38 +76,46 @@
         </div>
 
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active carousel-center">
             <img src="assets\images\banner1.webp" class="d-block w-80" alt="banner1" />
           </div>
           <div class="carousel-item">
-            <img src="assets\images\banner2.webp" class="d-block w-80" alt="banner2" />
+            <img src="assets\images\banner2.webp" width="100%" class="d-block w-80" alt="banner2" />
           </div>
           <div class="carousel-item">
-            <img src="assets\images\banner3.jpg" class="d-block w-80" alt="banner3" />
+            <img src="assets\images\banner3.jpg" width="100%" class="d-block w-80" alt="banner3" />
           </div>
         </div>
       </div>
     </div>
   </section>
   <hr class="separateur" />
+
+  </div>
   <div class="recherche1">
-    <label>Recherche</label>
-    <input type="search" />
+    <div class="textSecondaire">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed maiores repellendus laudantium soluta atque
+        nihil? Dolores aliquam nostrum tempore, placeat vel.</p>
+    </div>
+    <label></label>
+    <input type="search" placeholder="text input" />
 
     <button class="btn btn-primary"><span style="color: red">R</span>echercher</button>
   </div>
-</div>
+  </div>
   <section class="recherche">
     <div class="container-fluid">
       <div class="row">
         <div class="col-3"></div>
-      
 
-        <div class="recherche__citation">
-          <h3>Citation</h3>
 
-          <p>« Quand les choses tombent, elles tombent ! Tout est une question de destin... »</p>
-          <button class="btn btn-secondary"><span style="color: red">?</span></button>
+        <div class="recherche__citation container-fluid">
+          <div class="citation">
+            <h3>Citation</h3>
+
+            <cite>« Quand les choses tombent, elles tombent ! Tout est une question de destin... »</cite>
+          </div>
+          <button class="btn btn-primary btn-rechercher ">Button</button>
         </div>
 
         <div class="col-3"></div>
@@ -115,36 +124,42 @@
   </section>
   <hr class="separateur" />
   <!-- flexbox section -->
-  <section class="section1">
-    <div class="d-flex flex-row mb-3">
-      <div class="p-2">
-        <div class="card" style="width: 18rem">
-          <img src="assets\images\card1.webp" class="card-img-top" alt="card1" />
-          <div class="card-body">
-            <h5 class="card-title">FF VI - 1</h5>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, mollitia?</p>
-          </div>
-        </div>
-      </div>
-      <div class="p-2">
-        <div class="card" style="width: 18rem">
-          <img src="assets\images\card1.webp" class="card-img-top" alt="card1" />
-          <div class="card-body">
-            <h5 class="card-title">FF VI - 1</h5>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, mollitia?</p>
-          </div>
-        </div>
-      </div>
-      <div class="p-2">
-        <div class="card" style="width: 18rem">
-          <img src="assets\images\card1.webp" class="card-img-top" alt="card1" />
-          <div class="card-body">
-            <h5 class="card-title">FF VI - 1</h5>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, mollitia?</p>
-          </div>
+
+  <div class=" texte-important">
+    <h1 class="text-center  ">Gros Texte Important</h1>
+    <p class="text-center  ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque hic, eos omnis esse, eaque
+      perferendis sint veritatis sit laudantium quas necessitatibus culpa </p>
+  </div>
+
+  <div class="d-flex flex-row flex-wrap  ">
+    <div class="p-2  mx-auto test ">
+      <div class="card  " style="width: 18rem">
+        <img src="assets\images\card1.webp" class="card-img-top " alt="card1" />
+        <div class="card-body">
+          <h5 class="card-title">FF VI - 1</h5>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, mollitia?</p>
         </div>
       </div>
     </div>
+    <div class="p-2  mx-auto test">
+      <div class="card" style="width: 18rem">
+        <img src="assets\images\card1.webp" class="card-img-top " alt="card1" />
+        <div class="card-body">
+          <h5 class="card-title">FF VI - 1</h5>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, mollitia?</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-2  mx-auto test">
+      <div class="card" style="width: 18rem">
+        <img src="assets\images\card1.webp" class="card-img-top  " alt="card1" />
+        <div class="card-body">
+          <h5 class="card-title">FF VI - 1</h5>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, mollitia?</p>
+        </div>
+      </div>
+    </div>
+  </div>
   </section>
   <hr class="separateur" />
   <!-- gallerie section grid-->
@@ -195,14 +210,14 @@
         tenetur perferendis explicabo totam, dolores nihil veritatis officiis esse delectus vero. Vel eos ad rem.</p>
       <div class="pourcentage">
         <div class="sold">
-        <h4>44M</h4>
-        <p>Sold For</p>
-      </div>
-      <div class="contentUploaded">
-        <h4>324B</h4>
-        <p>Daily Content Uploaded</p>
-      </div>
-      
+          <h4>44M</h4>
+          <p>Sold For</p>
+        </div>
+        <div class="contentUploaded">
+          <h4>324B</h4>
+          <p>Daily Content Uploaded</p>
+        </div>
+
       </div>
       <button type="button" class="btn btn-secondary">View More</button>
     </div>

@@ -265,6 +265,41 @@
 }
 
 .recherche1 {
-  background-color: gray;
+  margin: 0 auto;
+  width: 40%;
   text-align: center;
+}
+
+.textSecondaire {
+  text-align: center;
+}
+
+.recherche__citation {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+  margin: 3rem;
+}
+
+.btn-rechercher {
+  width: 8rem;
+  margin: 1rem;
+}
+
+.carousel-center img {
+  width: 100%;
+  height: auto;
+}
+
+cite {
+  font-size: 1.5rem;
+}
+
+.texte-important {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.texte-important p {
+  margin: 5rem;
 }/*# sourceMappingURL=style.css.map */
