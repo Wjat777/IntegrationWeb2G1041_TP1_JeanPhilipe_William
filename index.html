@@ -22,39 +22,47 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class=" navbar ms-auto navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand d-flex" href="#"><img src="assets\images\final-logo.webp" alt="Final Fantasy Logo"
+          class="finalLogo" \></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mb-2 mb-lg-0 justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
+      <div class="collapse navbar-collapse navbar-brand " id="navbarSupportedContent">
+        <ul class="ms-auto navbar-nav mb-2 mb-lg-0 ">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false"> Dropdown </a>
+              aria-expanded="false"> Menu 1 </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false"> Menu 2 </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>  <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Menu 3</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menu 4</a>
+          </li>
+          
+          
         </ul>
       </div>
     </div>
   </nav>
   <hr />
-  <section class="banniere-slider">
+  <section class="banniere-slider container-fluid">
     <div class="container">
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
         <div class="carousel-indicators">
@@ -81,16 +89,18 @@
     </div>
   </section>
   <hr class="separateur" />
+  <div class="recherche1">
+    <label>Recherche</label>
+    <input type="search" />
+
+    <button class="btn btn-primary"><span style="color: red">R</span>echercher</button>
+  </div>
+</div>
   <section class="recherche">
     <div class="container-fluid">
       <div class="row">
         <div class="col-3"></div>
-        <div class="col-6">
-          <label>Recherche</label>
-          <input type="search" />
-
-          <button class="btn btn-primary"><span style="color: red">R</span>echercher</button>
-        </div>
+      
 
         <div class="recherche__citation">
           <h3>Citation</h3>
@@ -150,33 +160,56 @@
   </section>
   <hr class="separateur" />
   <!-- statistique-->
-  <section class="statistique">
-    <h2>Statistics</h2>
-    <div class="pieContainer">
-      <div class="pieBackground"></div>
-      <div id="pieSlice1" class="hold">
-        <div class="pie"></div>
-      </div>
-      <div id="pieSlice2" class="hold">
-        <div class="pie"></div>
-      </div>
-      <div id="pieSlice3" class="hold">
-        <div class="pie"></div>
-      </div>
-      <div id="pieSlice4" class="hold">
-        <div class="pie"></div>
-      </div>
-      <div id="pieSlice5" class="hold">
-        <div class="pie"></div>
-      </div>
-      <div id="pieSlice6" class="hold">
-        <div class="pie"></div>
-      </div>
-      <div class="innerCircle">
-        <div class="content"><b>Data</b><br />from 16<sup>th</sup> April, 2014</div>
+  <section class="statistique d-flex ">
+    <div class="totalPie">
+      <h2>Statistics</h2>
+      <div class="pieContainer">
+        <div class="pieBackground"></div>
+        <div id="pieSlice1" class="hold">
+          <div class="pie"></div>
+        </div>
+        <div id="pieSlice2" class="hold">
+          <div class="pie"></div>
+        </div>
+        <div id="pieSlice3" class="hold">
+          <div class="pie"></div>
+        </div>
+        <div id="pieSlice4" class="hold">
+          <div class="pie"></div>
+        </div>
+        <div id="pieSlice5" class="hold">
+          <div class="pie"></div>
+        </div>
+        <div id="pieSlice6" class="hold">
+          <div class="pie"></div>
+        </div>
+        <div class="innerCircle">
+          <div class="content"><b>Data</b><br />from 16<sup>th</sup> April, 2014</div>
+        </div>
       </div>
     </div>
+    <div>
+      <h3>Des statistiques</h3>
+
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, ipsum dolor a corporis, magni ea
+        tenetur perferendis explicabo totam, dolores nihil veritatis officiis esse delectus vero. Vel eos ad rem.</p>
+      <div class="pourcentage">
+        <div class="sold">
+        <h4>44M</h4>
+        <p>Sold For</p>
+      </div>
+      <div class="contentUploaded">
+        <h4>324B</h4>
+        <p>Daily Content Uploaded</p>
+      </div>
+      
+      </div>
+      <button type="button" class="btn btn-secondary">View More</button>
+    </div>
+
   </section>
+
+  </div>
   <hr class="separateur" />
   <!-- cards-->
 
@@ -371,7 +404,7 @@
   <!-- contat-->
   <section class="contact">
     <div class="contact__container  container-fluid ">
-      <div >
+      <div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d178790.956038735!2d-73.87038502740222!3d45.558196845287114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70d%3A0x654e3138211fefef!2zTW9udHLDqWFsLCBRQw!5e0!3m2!1sfr!2sca!4v1655940853359!5m2!1sfr!2sca"
           width="100%" height="800rem" style="border: 0" allowfullscreen="" loading="lazy"
@@ -386,42 +419,41 @@
 
             <label for="nom" class="form-label "></label>
 
-            <input type="text" class="form-control col-md-6 " id="nom" name="nom"
-              placeholder="Nom de famille" />
+            <input type="text" class="form-control col-md-6 " id="nom" name="nom" placeholder="Nom de famille" />
           </div>
 
           <div class="col-md-6 mb-3 ">
             <label for="prenom" class="form-label " form="prenom"></label>
             <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Prénom" />
-            
+
           </div>
           <div class="mb-3">
-          <input type="email" class="form-control  col-md-12 " id="exampleFormControlInput1" placeholder="Email" />
-        </div>
+            <input type="email" class="form-control  col-md-12 " id="exampleFormControlInput1" placeholder="Email" />
+          </div>
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label"></label>
             <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="message" rows="3"></textarea>
           </div>
           <input class="btn btn-primary" type="submit" value="Submit">
-          
+
         </form>
       </div>
-     
-     
-    
+
+
+
     </div>
   </section>
-  
+
   <hr class="separateur" />
   <!-- contat-->
 
-    <footer class="footer container-fluid">
- 
-      <div class="logo">
-        <img src="assets\images\final-logo.webp" alt="Final Fantasy Logo" class="finalLogo"\>
+  <footer class="footer container-fluid">
 
-      </div>
-      <div class="endMenu">
+    <div class="logo">
+      <img src="assets\images\final-logo.webp" alt="Final Fantasy Logo" class="finalLogo" \>
+
+    </div>
+    <div class="endMenu">
       <ul class="d-flex flex-row flex-wrap mb-3">
         <a href="#">
           <li>About us</li>
@@ -442,20 +474,20 @@
           <li>Privacy Policy</li>
         </a>
 
-        </ul>
-      </div>
+      </ul>
+    </div>
 
-      <div class="contact footer">
-        <p>Fait par Jean-Philippe et William</p>
-        <div class="icons"><i class="bi bi-facebook"></i><i class="bi bi-instagram"></i><i class="bi bi-twitter"></i><i
-            class="bi bi-linkedin"></i></div>
-        <div class="contactUs">
-          <p><i class="bi bi-telephone-fill"></i><a href="tel:+4733378901">+47 333 78 901</a></p>
-          <p><i class="bi bi-envelope"> </i><a href="mailto:webmaster@example.com">Jon Doe</a></p>
-        </div>
+    <div class="contact footer d-flex flex-row flex-wrap mb-3">
+      <p>Fait par Jean-Philippe et William</p>
+      <div class="icons"><i class="bi bi-facebook"></i><i class="bi bi-instagram"></i><i class="bi bi-twitter"></i><i
+          class="bi bi-linkedin"></i></div>
+      <div class="contactUs">
+        <p><i class="bi bi-telephone-fill"></i><a href="tel:+4733378901">+47 333 78 901</a></p>
+        <p><i class="bi bi-envelope"> </i><a href="mailto:webmaster@example.com">Jon Doe</a></p>
       </div>
-    
-    </footer>
+    </div>
+
+  </footer>
 
   <hr class="separateur" />
 

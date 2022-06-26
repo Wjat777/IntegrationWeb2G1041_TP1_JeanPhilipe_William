@@ -40,6 +40,7 @@
 .pieContainer {
   height: 150px;
   position: relative;
+  width: 200px;
 }
 
 .pieBackground {
@@ -243,3 +244,27 @@
   width: 25%;
   margin: 1rem;
 }
+
+.statistique {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.totalPie {
+  width: 50%;
+}
+
+.pourcentage {
+  display: flex;
+  justify-content: space-between;
+  width: 49%;
+}
+
+.recherche {
+  background-color: gray;
+}
+
+.recherche1 {
+  background-color: gray;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
