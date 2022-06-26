@@ -1,10 +1,84 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "FF";
+  src: url("/assets/fonts/finalf.ttf");
+  /*Copyright©  Juan Pablo Reyes Altamirano (https://www.fontspace.com/juan-pablo-reyes-altamirano/)*/
+}
+/*
+BEM – meaning block, element, modifier – is a front-end naming methodology thought up by the guys at Yandex. 
+It is a smart way of naming your CSS classes to give them more transparency and meaning to other developers.
+They are far more strict and informative, which makes the BEM naming convention ideal for teams 
+of developers on larger projects that might last a while.
+*/
+/*
+BEM – meaning block, element, modifier – is a front-end naming methodology thought up by the guys at Yandex. 
+It is a smart way of naming your CSS classes to give them more transparency and meaning to other developers.
+They are far more strict and informative, which makes the BEM naming convention ideal for teams 
+of developers on larger projects that might last a while.
+*/
+.nav--blue {
+  background-color: salmon;
+  align-items: flex-end;
+  padding: auto;
+}
+
+.finalLogo {
+  width: 10rem;
+}
+
+.logo {
+  display: grid;
+  place-content: center;
+}
+
+.endMenu ul {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none !important;
+}
+.endMenu .endMenu li {
+  padding: 1rem;
+}
+
+.nomPrenom {
+  display: flex;
+}
+
+/*
+
+layout
+╔═══╤═════╤═══╤═══╗
+║   │ 1   │   │   ║
+╟───┤     ├───┼───╢
+║ 2 │     │ 4 │ 5 ║
+║   ├───┬─┴───┤   ║
+║   │ 3 │ 6   │   ║
+╟───┼───┤     ├───╢
+║   │   │     │   ║
+╚═══╧═══╧═════╧═══╝
+
+*/
 .section2__grid {
+  border-radius: 10px;
+  background-color: cyan;
+  border: 2px gray dashed;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 5px 5px;
   grid-auto-flow: row;
-  grid-template-areas: ". img2 img2 . ." "img1 img2 img2 img3 img4" "img1 img5 img6 img6 img4" ". . img6 img6 .";
+  grid-template-areas: ". img1 img1 . ." "img2 img1 img1 img4 img5" "img2 img3 img6 img6 img5" ". . img6 img6 .";
+}
+
+.section2__item {
+  background-color: #80cbc4;
+  border: 1px solid lightcyan;
+  padding: 20px;
+  text-align: center;
 }
 
 .section2__img1 {
@@ -35,6 +109,27 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/*
+BEM – meaning block, element, modifier – is a front-end naming methodology thought up by the guys at Yandex. 
+It is a smart way of naming your CSS classes to give them more transparency and meaning to other developers.
+They are far more strict and informative, which makes the BEM naming convention ideal for teams 
+of developers on larger projects that might last a while.
+*/
+.recherche {
+  /* CSS declarations for `.block` */
+}
+.recherche__citation {
+  font-family: "FF";
+  font-size: 1.3rem;
+}
+.recherche__citation--italic {
+  /* CSS declarations for `.block--modifier__element` */
+  font-style: italic;
+}
+.recherche--blue {
+  color: darkblue;
 }
 
 .pieContainer {
@@ -140,6 +235,35 @@
   font-size: 14px;
 }
 
+.statistique {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.totalPie {
+  width: 50%;
+}
+
+.pourcentage {
+  display: flex;
+  justify-content: space-between;
+  width: 49%;
+}
+
+.statistique__text {
+  max-width: 20rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.contact i {
+  padding: 0.2rem;
+}
+
 .contact__container {
   position: relative;
 }
@@ -158,6 +282,10 @@
   padding: 12px;
   border-radius: 12px;
   max-width: calc(30rem - 5px);
+}
+
+.contactUs {
+  display: flex;
 }
 
 .card {
@@ -187,77 +315,9 @@
   height: 100px;
 }
 
-.nav--droite {
-  background-color: salmon;
-  align-items: flex-end;
-  padding: auto;
-  color: blue;
-}
-
-.contact {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-}
-
-.footer {
-  align-items: center;
-}
-
-.contactUs {
-  display: flex;
-}
-
-.contact i {
-  padding: 0.2rem;
-}
-
-.finalLogo {
-  width: 10rem;
-}
-
-.logo {
-  display: grid;
-  place-content: center;
-}
-
-.endMenu ul {
-  display: flex;
-  justify-content: center;
-  margin: 2rem;
-  padding: 1rem;
-  justify-content: center;
-  align-items: center;
-  list-style-type: none !important;
-}
-
-.endMenu li {
-  padding: 1rem;
-}
-
-.nomPrenom {
-  display: flex;
-}
-
 .btn-primary {
   width: 25%;
   margin: 1rem;
-}
-
-.statistique {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.totalPie {
-  width: 50%;
-}
-
-.pourcentage {
-  display: flex;
-  justify-content: space-between;
-  width: 49%;
 }
 
 .recherche {
@@ -267,4 +327,5 @@
 .recherche1 {
   background-color: gray;
   text-align: center;
-}/*# sourceMappingURL=style.css.map */
+  font-family: "FF";
+}

@@ -1,117 +1,25 @@
 @use "constants";
+@use "mixim_bem";
+
+@use "nav";
+@use "form";
 @use "section2";
-@use "pie";
+@use "recherche";
+@use "statistique";
 @use "contact";
 @use "members";
 
-.nav--droite {
-  background-color: salmon;
-  align-items: flex-end;
-  padding: auto;
-  color: blue;
-}
-
-.contact {
-  display: flex;
- 
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-
- 
-}
-
-
-.footer {
-  align-items: center;
-  
-
-}
-
-.contactUs {
-
-  display: flex;
- 
-}
-
-.contact i{
-
-  padding: 0.2rem;
-
-  
- 
-}
-
-
-.finalLogo {
-
-  width: 10rem;
-
-}
-
-.logo {
-
-  display: grid;
-  place-content: center;
-}
-
-.endMenu ul{
-
-  display: flex;
-  justify-content: center;
-  margin: 2rem;
-  padding: 1rem;
-  justify-content: center;
-  align-items: center;
-  list-style-type: none !important;
-
-}
-.endMenu li  {
-
-  padding: 1rem;
-}
-
-.nomPrenom {
-
-  display: flex;
-  
- 
-}
-
 .btn-primary {
-
   width: 25%;
   margin: 1rem;
 }
 
-.statistique {
-
-
-  display: flex;
-  justify-content: flex-end;
-}
-
-.totalPie {
-
-  width: 50%;
-
-}
-
-.pourcentage {
-
-  display: flex;
-  
-  justify-content: space-between;
-  width: 49%;
-}
-
 .recherche {
-
   background-color: gray;
 }
 
 .recherche1 {
-
   background-color: gray;
   text-align: center;
+  font-family: "FF";
 }

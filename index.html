@@ -18,10 +18,12 @@
     integrity="sha512-W3ZfgmZ5g1rCPFiCbOb+tn7g7sQWOQCB1AkDqrBG1Yp3iDjY9KYFh/k1AWxrt85LX5BRazEAuv+5DV2YZwghag=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/Style/CSS/style.css" />
+  
   <title>Final Fantasy VI</title>
 </head>
 
 <body>
+  
   <nav class=" navbar ms-auto navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand d-flex" href="#"><img src="assets\images\final-logo.webp" alt="Final Fantasy Logo"
@@ -61,7 +63,7 @@
       </div>
     </div>
   </nav>
-  <hr />
+
   <section class="banniere-slider container-fluid">
     <div class="container">
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -105,7 +107,7 @@
         <div class="recherche__citation">
           <h3>Citation</h3>
 
-          <p>« Quand les choses tombent, elles tombent ! Tout est une question de destin... »</p>
+          <p class="recherche__citation">« FINAL FANTASY VI Quand les choses tombent, elles tombent ! Tout est une question de destin... »</p>
           <button class="btn btn-secondary"><span style="color: red">?</span></button>
         </div>
 
@@ -150,18 +152,20 @@
   <!-- gallerie section grid-->
   <section class="section2">
     <div class="section2__grid">
-      <div class="section2__img1"><img src="assets\images\banner3.jpg" class="gallery__img" alt="grid1" /></div>
-      <div class="section2__img2"><img src="assets\images\banner3.jpg" class="gallery__img" alt="grid2" /></div>
-      <div class="section2__img3"><img src="assets\images\banner3.jpg" class="gallery__img" alt="grid3" /></div>
-      <div class="section2__img4"><img src="assets\images\banner3.jpg" class="gallery__img" alt="grid4" /></div>
-      <div class="section2__img5"><img src="assets\images\banner3.jpg" class="gallery__img" alt="grid5" /></div>
-      <div class="section2__img6"><img src="assets\images\banner3.jpg" class="gallery__img" alt="grid6" /></div>
+      <div class="section2__img1 section2__item"><img src="assets/images/image1.jpg" class="gallery__img" alt="grid1" /></div>
+      <div class="section2__img2 section2__item"><img src="assets/images/image2.webp" class="gallery__img" alt="grid2" /></div>
+      <div class="section2__img3 section2__item"><img src="assets/images/image3.jpg" class="gallery__img" alt="grid3" /></div>
+      <div class="section2__img4 section2__item"><img src="assets/images/image4.jpg" class="gallery__img" alt="grid4" /></div>
+      <div class="section2__img5 section2__item"><img src="assets/images/image5.webp" class="gallery__img" alt="grid5" /></div>
+      <div class="section2__img6 section2__item "><img src="assets/images/image6.webp" class="gallery__img" alt="grid6" /></div>
     </div>
   </section>
   <hr class="separateur" />
+
+  
   <!-- statistique-->
-  <section class="statistique d-flex ">
-    <div class="totalPie">
+  <section class="statistique d-flex flex-row flex-wrap ">
+    <div class="totalPie p2">
       <h2>Statistics</h2>
       <div class="pieContainer">
         <div class="pieBackground"></div>
@@ -188,12 +192,15 @@
         </div>
       </div>
     </div>
-    <div>
+    <div class="p2">
       <h3>Des statistiques</h3>
 
+      <div class="statistique__text">
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, ipsum dolor a corporis, magni ea
         tenetur perferendis explicabo totam, dolores nihil veritatis officiis esse delectus vero. Vel eos ad rem.</p>
-      <div class="pourcentage">
+      </div>
+      <div>
+        <div class="pourcentage">
         <div class="sold">
         <h4>44M</h4>
         <p>Sold For</p>
@@ -447,7 +454,7 @@
   <hr class="separateur" />
   <!-- contat-->
 
-  <footer class="footer container-fluid">
+  <footer class="container-fluid">
 
     <div class="logo">
       <img src="assets\images\final-logo.webp" alt="Final Fantasy Logo" class="finalLogo" \>

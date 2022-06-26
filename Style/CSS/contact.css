@@ -1,3 +1,13 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.contact i {
+  padding: 0.2rem;
+}
+
 .contact__container {
   position: relative;
 }
@@ -16,4 +26,8 @@
   padding: 12px;
   border-radius: 12px;
   max-width: calc(30rem - 5px);
-}/*# sourceMappingURL=contact.css.map */
+}
+
+.contactUs {
+  display: flex;
+}

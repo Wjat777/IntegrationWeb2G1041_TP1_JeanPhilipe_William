@@ -5,30 +5,3 @@ It is a smart way of naming your CSS classes to give them more transparency and 
 They are far more strict and informative, which makes the BEM naming convention ideal for teams 
 of developers on larger projects that might last a while.
 */
-.nav--blue {
-  background-color: salmon;
-  align-items: flex-end;
-  padding: auto;
-}
-
-.finalLogo {
-  width: 10rem;
-}
-
-.logo {
-  display: grid;
-  place-content: center;
-}
-
-.endMenu ul {
-  display: flex;
-  justify-content: center;
-  margin: 2rem;
-  padding: 1rem;
-  justify-content: center;
-  align-items: center;
-  list-style-type: none !important;
-}
-.endMenu .endMenu li {
-  padding: 1rem;
-}

@@ -1,0 +1,32 @@
+@import "mixim_bem";
+.nav {
+  @include modifier("blue") {
+    background-color: salmon;
+    align-items: flex-end;
+    padding: auto;
+  }
+}
+
+.finalLogo {
+  width: 10rem;
+}
+
+.logo {
+  display: grid;
+  place-content: center;
+}
+
+.endMenu {
+  ul {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none !important;
+  }
+  .endMenu li {
+    padding: 1rem;
+  }
+}

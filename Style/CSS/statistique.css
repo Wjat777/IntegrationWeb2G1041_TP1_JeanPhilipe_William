@@ -90,6 +90,7 @@
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5) inset;
   color: white;
 }
+
 .innerCircle .content {
   position: absolute;
   display: block;
@@ -98,4 +99,23 @@
   left: 0;
   text-align: center;
   font-size: 14px;
+}
+
+.statistique {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.totalPie {
+  width: 50%;
+}
+
+.pourcentage {
+  display: flex;
+  justify-content: space-between;
+  width: 49%;
+}
+
+.statistique__text {
+  max-width: 20rem;
 }

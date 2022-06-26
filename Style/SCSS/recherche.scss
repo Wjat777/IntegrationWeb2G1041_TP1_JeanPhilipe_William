@@ -1,0 +1,19 @@
+@import "mixim_bem";
+
+.recherche {
+  /* CSS declarations for `.block` */
+
+  @include element("citation") {
+    font-family: "FF";
+    font-size: 1.3rem;
+
+    @include modifier("italic") {
+      /* CSS declarations for `.block--modifier__element` */
+      font-style: italic;
+    }
+  }
+
+  @include modifier("blue") {
+    color: darkblue;
+  }
+}
