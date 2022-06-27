@@ -1,121 +1,73 @@
-.pieContainer {
-  height: 150px;
-  position: relative;
-  width: 200px;
-}
-
-.pieBackground {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
-}
-
-.pie {
-  transition: all 1s;
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  clip: rect(0px, 75px, 150px, 0px);
-}
-
-.hold {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  clip: rect(0px, 150px, 150px, 75px);
-}
-
-#pieSlice1 .pie {
-  background-color: #1b458b;
-  transform: rotate(30deg);
-}
-
-#pieSlice2 {
-  transform: rotate(30deg);
-}
-
-#pieSlice2 .pie {
-  background-color: #0a0;
-  transform: rotate(60deg);
-}
-
-#pieSlice3 {
-  transform: rotate(90deg);
-}
-
-#pieSlice3 .pie {
-  background-color: #f80;
-  transform: rotate(120deg);
-}
-
-#pieSlice4 {
-  transform: rotate(210deg);
-}
-
-#pieSlice4 .pie {
-  background-color: #08f;
-  transform: rotate(10deg);
-}
-
-#pieSlice5 {
-  transform: rotate(220deg);
-}
-
-#pieSlice5 .pie {
-  background-color: #a04;
-  transform: rotate(70deg);
-}
-
-#pieSlice6 {
-  transform: rotate(290deg);
-}
-
-#pieSlice6 .pie {
-  background-color: #ffd700;
-  transform: rotate(70deg);
-}
-
-.innerCircle {
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  background-color: #444;
-  border-radius: 100%;
-  top: 15px;
-  left: 15px;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5) inset;
-  color: white;
-}
-.innerCircle .content {
-  position: absolute;
-  display: block;
-  width: 120px;
-  top: 30px;
-  left: 0;
-  text-align: center;
-  font-size: 14px;
-}
+@import "constants";
+@import "mixim_bem";
 
 .statistique {
-  display: flex;
-  justify-content: flex-end;
+  font-family: "FF";
+  background-color: $bloc-color;
+
+  @include element("pie") {
+    width: 50%;
+  }
+
+  @include element("pourcentage") {
+    width: 49%;
+  }
+  @include element("explication") {
+    max-width: 30rem;
+  }
+
+  @include element("pourcentage") {
+    width: 49%;
+  }
+  @include element("contentUploaded") {
+    font-style: italic;
+  }
+  @include element("sold") {
+    font-style: italic;
+  }
+  @include modifier("text") {
+    /* CSS declarations for `.block--modifier__element` */
+    font-family: "FF";
+    font-size: x-large;
+  }
 }
 
-.totalPie {
-  width: 50%;
+/**/
+
+.pie-chart {
+  background: radial-gradient(circle closest-side, transparent 70%, white 0),
+    conic-gradient(from 134deg, #338e5f 0, #338e5f 63.8%, #f28e2c 0, #f28e2c 75.2%, #e15759 0, #e15759 85.7%, #76b7b2 0, #76b7b2 100%);
+  position: relative;
+  width: 500px;
+  min-height: 350px;
+  margin: 0;
+  outline: 1px solid #ccc;
 }
-
-.pourcentage {
-  display: flex;
-
-  justify-content: space-between;
-  width: 49%;
+.pie-chart h2 {
+  position: absolute;
+  margin: 1rem;
 }
-
-.statistique__text {
-  max-width: 20rem;
+.pie-chart cite {
+  position: absolute;
+  bottom: 0;
+  font-size: 80%;
+  padding: 1rem;
+  color: gray;
+}
+.pie-chart figcaption {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  font-size: smaller;
+  text-align: right;
+}
+.pie-chart span:after {
+  display: inline-block;
+  content: "";
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.4em;
+  height: 0.8em;
+  border-radius: 0.2em;
+  background: currentColor;
 }

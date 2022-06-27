@@ -10,6 +10,11 @@ It is a smart way of naming your CSS classes to give them more transparency and 
 They are far more strict and informative, which makes the BEM naming convention ideal for teams 
 of developers on larger projects that might last a while.
 */
-.formulaire {
+.carousel {
   background-color: #ddaa77;
-}/*# sourceMappingURL=form.css.map */
+}
+
+.carousel-center img {
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=carousel.css.map */

@@ -1,4 +1,6 @@
-.card {
+@import "constants";
+@import "mixim_bem";
 
-    width: 20rem;
+.section1 {
+  background-color: $bloc-color;
 }

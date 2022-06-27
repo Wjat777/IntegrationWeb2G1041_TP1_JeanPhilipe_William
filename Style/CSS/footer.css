@@ -1,3 +1,35 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "FF";
+  src: url("/assets/fonts/finalf.ttf");
+  /*Copyright©  Juan Pablo Reyes Altamirano (https://www.fontspace.com/juan-pablo-reyes-altamirano/)*/
+}
+/*
+BEM – meaning block, element, modifier – is a front-end naming methodology thought up by the guys at Yandex. 
+It is a smart way of naming your CSS classes to give them more transparency and meaning to other developers.
+They are far more strict and informative, which makes the BEM naming convention ideal for teams 
+of developers on larger projects that might last a while.
+*/
 .footer {
+  background-color: #ddaa77;
   align-items: center;
 }
+.footer__endMenu ul {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none !important;
+}
+.footer__endMenu li {
+  padding: 1rem;
+}
+.footer__finalLogo {
+  width: 10rem;
+}
+.footer__logo {
+  display: grid;
+  place-content: center;
+}/*# sourceMappingURL=footer.css.map */
