@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../SCSS/section1.scss"],"names":[],"mappings":"AAAA;EAEI","file":"section1.css"}
+{"version":3,"sourceRoot":"","sources":["../SCSS/constants.scss","../SCSS/mixim_bem.scss","../SCSS/section1.scss"],"names":[],"mappings":";AAAA;EACE;EACA;AAAsC;;ACDxC;AAAA;AAAA;AAAA;AAAA;AAAA;ACEA;EACE,kBFGW","file":"section1.css"}

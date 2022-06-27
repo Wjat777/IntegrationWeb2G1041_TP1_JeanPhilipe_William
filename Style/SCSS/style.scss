@@ -1,25 +1,21 @@
-@use "constants";
 @use "mixim_bem";
-
+@use "accessibilite";
 @use "nav";
-@use "form";
+@use "carousel";
+@use "section1";
 @use "section2";
 @use "recherche";
 @use "statistique";
 @use "contact";
+@use "footer";
+@use "form";
 @use "members";
 
-.btn-primary {
-  width: 25%;
-  margin: 1rem;
+@import "constants";
+body {
+  background-color: $base-color;
 }
-
-.recherche {
-  background-color: gray;
-}
-
-.recherche1 {
-  background-color: gray;
-  text-align: center;
-  font-family: "FF";
+.separateur {
+  border: 5px solid $hr-color;
+  border-radius: 5px;
 }

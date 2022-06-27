@@ -3,8 +3,9 @@
 .recherche {
   /* CSS declarations for `.block` */
 
+  text-align: center;
+  font-family: "FF";
   @include element("citation") {
-    font-family: "FF";
     font-size: 1.3rem;
 
     @include modifier("italic") {
@@ -13,7 +14,13 @@
     }
   }
 
-  @include modifier("blue") {
-    color: darkblue;
+  @include modifier("center") {
+    text-align: center;
+  }
+
+  @include modifier("border") {
+    background-color: lightblue;
+    border-radius: 5%;
+    border: 1px solid black;
   }
 }

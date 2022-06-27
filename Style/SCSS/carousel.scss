@@ -1,6 +1,10 @@
 @import "constants";
 @import "mixim_bem";
 
-.formulaire {
+.carousel {
   background-color: $bloc-color;
+}
+.carousel-center img {
+  width: 100%;
+  height: auto;
 }

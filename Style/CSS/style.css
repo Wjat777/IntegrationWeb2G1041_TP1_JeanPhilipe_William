@@ -1,4 +1,24 @@
 @charset "UTF-8";
+/*
+BEM – meaning block, element, modifier – is a front-end naming methodology thought up by the guys at Yandex. 
+It is a smart way of naming your CSS classes to give them more transparency and meaning to other developers.
+They are far more strict and informative, which makes the BEM naming convention ideal for teams 
+of developers on larger projects that might last a while.
+*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
 @font-face {
   font-family: "FF";
   src: url("/assets/fonts/finalf.ttf");
@@ -10,44 +30,65 @@ It is a smart way of naming your CSS classes to give them more transparency and 
 They are far more strict and informative, which makes the BEM naming convention ideal for teams 
 of developers on larger projects that might last a while.
 */
+.nav--blue {
+  color: blue;
+  align-items: flex-end;
+  padding: auto;
+}
+.nav__finalLogo {
+  width: 10rem;
+}
+.nav__logo {
+  display: grid;
+  place-content: center;
+}
+
+@font-face {
+  font-family: "FF";
+  src: url("/assets/fonts/finalf.ttf");
+  /*Copyright©  Juan Pablo Reyes Altamirano (https://www.fontspace.com/juan-pablo-reyes-altamirano/)*/
+}
 /*
 BEM – meaning block, element, modifier – is a front-end naming methodology thought up by the guys at Yandex. 
 It is a smart way of naming your CSS classes to give them more transparency and meaning to other developers.
 They are far more strict and informative, which makes the BEM naming convention ideal for teams 
 of developers on larger projects that might last a while.
 */
-.nav--blue {
-  background-color: salmon;
-  align-items: flex-end;
-  padding: auto;
+.carousel {
+  background-color: #eeeeee;
 }
 
-.finalLogo {
-  width: 10rem;
+.carousel-center img {
+  width: 100%;
+  height: auto;
 }
 
-.logo {
-  display: grid;
-  place-content: center;
+@font-face {
+  font-family: "FF";
+  src: url("/assets/fonts/finalf.ttf");
+  /*Copyright©  Juan Pablo Reyes Altamirano (https://www.fontspace.com/juan-pablo-reyes-altamirano/)*/
+}
+/*
+BEM – meaning block, element, modifier – is a front-end naming methodology thought up by the guys at Yandex. 
+It is a smart way of naming your CSS classes to give them more transparency and meaning to other developers.
+They are far more strict and informative, which makes the BEM naming convention ideal for teams 
+of developers on larger projects that might last a while.
+*/
+.section1 {
+  background-color: #eeeeee;
 }
 
-.endMenu ul {
-  display: flex;
-  justify-content: center;
-  margin: 2rem;
-  padding: 1rem;
-  justify-content: center;
-  align-items: center;
-  list-style-type: none !important;
+@font-face {
+  font-family: "FF";
+  src: url("/assets/fonts/finalf.ttf");
+  /*Copyright©  Juan Pablo Reyes Altamirano (https://www.fontspace.com/juan-pablo-reyes-altamirano/)*/
 }
-.endMenu .endMenu li {
-  padding: 1rem;
-}
-
-.nomPrenom {
-  display: flex;
-}
-
+/*
+BEM – meaning block, element, modifier – is a front-end naming methodology thought up by the guys at Yandex. 
+It is a smart way of naming your CSS classes to give them more transparency and meaning to other developers.
+They are far more strict and informative, which makes the BEM naming convention ideal for teams 
+of developers on larger projects that might last a while.
+*/
 /*
 
 layout
@@ -62,6 +103,10 @@ layout
 ╚═══╧═══╧═════╧═══╝
 
 */
+.section2__container {
+  background-color: #eeeeee;
+}
+
 .section2__grid {
   border-radius: 10px;
   background-color: cyan;
@@ -119,146 +164,119 @@ of developers on larger projects that might last a while.
 */
 .recherche {
   /* CSS declarations for `.block` */
+  text-align: center;
+  font-family: "FF";
 }
 .recherche__citation {
-  font-family: "FF";
   font-size: 1.3rem;
 }
 .recherche__citation--italic {
   /* CSS declarations for `.block--modifier__element` */
   font-style: italic;
 }
-.recherche--blue {
-  color: darkblue;
-}
-
-.pieContainer {
-  height: 150px;
-  position: relative;
-  width: 200px;
-}
-
-.pieBackground {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
-}
-
-.pie {
-  transition: all 1s;
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  clip: rect(0px, 75px, 150px, 0px);
-}
-
-.hold {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  clip: rect(0px, 150px, 150px, 75px);
-}
-
-#pieSlice1 .pie {
-  background-color: #1b458b;
-  transform: rotate(30deg);
-}
-
-#pieSlice2 {
-  transform: rotate(30deg);
-}
-
-#pieSlice2 .pie {
-  background-color: #0a0;
-  transform: rotate(60deg);
-}
-
-#pieSlice3 {
-  transform: rotate(90deg);
-}
-
-#pieSlice3 .pie {
-  background-color: #f80;
-  transform: rotate(120deg);
-}
-
-#pieSlice4 {
-  transform: rotate(210deg);
-}
-
-#pieSlice4 .pie {
-  background-color: #08f;
-  transform: rotate(10deg);
-}
-
-#pieSlice5 {
-  transform: rotate(220deg);
-}
-
-#pieSlice5 .pie {
-  background-color: #a04;
-  transform: rotate(70deg);
-}
-
-#pieSlice6 {
-  transform: rotate(290deg);
-}
-
-#pieSlice6 .pie {
-  background-color: #ffd700;
-  transform: rotate(70deg);
-}
-
-.innerCircle {
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  background-color: #444;
-  border-radius: 100%;
-  top: 15px;
-  left: 15px;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5) inset;
-  color: white;
-}
-
-.innerCircle .content {
-  position: absolute;
-  display: block;
-  width: 120px;
-  top: 30px;
-  left: 0;
+.recherche--center {
   text-align: center;
-  font-size: 14px;
+}
+.recherche--border {
+  background-color: lightblue;
+  border-radius: 5%;
+  border: 1px solid black;
 }
 
+@font-face {
+  font-family: "FF";
+  src: url("/assets/fonts/finalf.ttf");
+  /*Copyright©  Juan Pablo Reyes Altamirano (https://www.fontspace.com/juan-pablo-reyes-altamirano/)*/
+}
+/*
+BEM – meaning block, element, modifier – is a front-end naming methodology thought up by the guys at Yandex. 
+It is a smart way of naming your CSS classes to give them more transparency and meaning to other developers.
+They are far more strict and informative, which makes the BEM naming convention ideal for teams 
+of developers on larger projects that might last a while.
+*/
 .statistique {
-  display: flex;
-  justify-content: flex-end;
+  font-family: "FF";
+  background-color: #eeeeee;
 }
-
-.totalPie {
+.statistique__pie {
   width: 50%;
 }
-
-.pourcentage {
-  display: flex;
-  justify-content: space-between;
+.statistique__pourcentage {
   width: 49%;
 }
-
-.statistique__text {
-  max-width: 20rem;
+.statistique__explication {
+  max-width: 30rem;
+}
+.statistique__pourcentage {
+  width: 49%;
+}
+.statistique__contentUploaded {
+  font-style: italic;
+}
+.statistique__sold {
+  font-style: italic;
+}
+.statistique--text {
+  /* CSS declarations for `.block--modifier__element` */
+  font-family: "FF";
+  font-size: x-large;
 }
 
+/**/
+.pie-chart {
+  background: radial-gradient(circle closest-side, transparent 70%, white 0), conic-gradient(from 134deg, #338e5f 0, #338e5f 63.8%, #f28e2c 0, #f28e2c 75.2%, #e15759 0, #e15759 85.7%, #76b7b2 0, #76b7b2 100%);
+  position: relative;
+  width: 500px;
+  min-height: 350px;
+  margin: 0;
+  outline: 1px solid #ccc;
+}
+
+.pie-chart h2 {
+  position: absolute;
+  margin: 1rem;
+}
+
+.pie-chart cite {
+  position: absolute;
+  bottom: 0;
+  font-size: 80%;
+  padding: 1rem;
+  color: gray;
+}
+
+.pie-chart figcaption {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  font-size: smaller;
+  text-align: right;
+}
+
+.pie-chart span:after {
+  display: inline-block;
+  content: "";
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.4em;
+  height: 0.8em;
+  border-radius: 0.2em;
+  background: currentColor;
+}
+
+@font-face {
+  font-family: "FF";
+  src: url("/assets/fonts/finalf.ttf");
+  /*Copyright©  Juan Pablo Reyes Altamirano (https://www.fontspace.com/juan-pablo-reyes-altamirano/)*/
+}
+/*
+BEM – meaning block, element, modifier – is a front-end naming methodology thought up by the guys at Yandex. 
+It is a smart way of naming your CSS classes to give them more transparency and meaning to other developers.
+They are far more strict and informative, which makes the BEM naming convention ideal for teams 
+of developers on larger projects that might last a while.
+*/
 .contact {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
+  background-color: #eeeeee;
 }
 .contact i {
   padding: 0.2rem;
@@ -288,6 +306,71 @@ of developers on larger projects that might last a while.
   display: flex;
 }
 
+@font-face {
+  font-family: "FF";
+  src: url("/assets/fonts/finalf.ttf");
+  /*Copyright©  Juan Pablo Reyes Altamirano (https://www.fontspace.com/juan-pablo-reyes-altamirano/)*/
+}
+/*
+BEM – meaning block, element, modifier – is a front-end naming methodology thought up by the guys at Yandex. 
+It is a smart way of naming your CSS classes to give them more transparency and meaning to other developers.
+They are far more strict and informative, which makes the BEM naming convention ideal for teams 
+of developers on larger projects that might last a while.
+*/
+.footer {
+  background-color: #eeeeee;
+  align-items: center;
+}
+.footer__endMenu ul {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none !important;
+}
+.footer__endMenu li {
+  padding: 1rem;
+}
+.footer__finalLogo {
+  width: 10rem;
+}
+.footer__logo {
+  display: grid;
+  place-content: center;
+}
+
+@font-face {
+  font-family: "FF";
+  src: url("/assets/fonts/finalf.ttf");
+  /*Copyright©  Juan Pablo Reyes Altamirano (https://www.fontspace.com/juan-pablo-reyes-altamirano/)*/
+}
+/*
+BEM – meaning block, element, modifier – is a front-end naming methodology thought up by the guys at Yandex. 
+It is a smart way of naming your CSS classes to give them more transparency and meaning to other developers.
+They are far more strict and informative, which makes the BEM naming convention ideal for teams 
+of developers on larger projects that might last a while.
+*/
+.formulaire {
+  background-color: #eeeeee;
+}
+
+@font-face {
+  font-family: "FF";
+  src: url("/assets/fonts/finalf.ttf");
+  /*Copyright©  Juan Pablo Reyes Altamirano (https://www.fontspace.com/juan-pablo-reyes-altamirano/)*/
+}
+/*
+BEM – meaning block, element, modifier – is a front-end naming methodology thought up by the guys at Yandex. 
+It is a smart way of naming your CSS classes to give them more transparency and meaning to other developers.
+They are far more strict and informative, which makes the BEM naming convention ideal for teams 
+of developers on larger projects that might last a while.
+*/
+.members {
+  background-color: #eeeeee;
+}
+
 .card {
   position: relative;
   display: -webkit-flex;
@@ -315,17 +398,16 @@ of developers on larger projects that might last a while.
   height: 100px;
 }
 
-.btn-primary {
-  width: 25%;
-  margin: 1rem;
-}
-
-.recherche {
-  background-color: gray;
-}
-
-.recherche1 {
-  background-color: gray;
-  text-align: center;
+@font-face {
   font-family: "FF";
+  src: url("/assets/fonts/finalf.ttf");
+  /*Copyright©  Juan Pablo Reyes Altamirano (https://www.fontspace.com/juan-pablo-reyes-altamirano/)*/
 }
+body {
+  background-color: #fdfdfd;
+}
+
+.separateur {
+  border: 5px solid #5fa1a2;
+  border-radius: 5px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,5 @@
+@import "constants";
+@import "mixim_bem";
 /*
 
 layout
@@ -12,6 +14,10 @@ layout
 ╚═══╧═══╧═════╧═══╝
 
 */
+
+.section2__container {
+  background-color: $bloc-color;
+}
 
 .section2__grid {
   border-radius: 10px;
@@ -36,28 +42,10 @@ layout
   text-align: center;
 }
 
-.section2__img1 {
-  grid-area: img1;
-}
-
-.section2__img2 {
-  grid-area: img2;
-}
-
-.section2__img3 {
-  grid-area: img3;
-}
-
-.section2__img4 {
-  grid-area: img4;
-}
-
-.section2__img5 {
-  grid-area: img5;
-}
-
-.section2__img6 {
-  grid-area: img6;
+@for $i from 1 through 6 {
+  .section2__img#{$i} {
+    grid-area: img#{$i};
+  }
 }
 
 .gallery__img {

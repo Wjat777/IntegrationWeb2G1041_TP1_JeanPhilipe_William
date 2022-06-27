@@ -7,15 +7,21 @@ of developers on larger projects that might last a while.
 */
 .recherche {
   /* CSS declarations for `.block` */
+  text-align: center;
+  font-family: "FF";
 }
 .recherche__citation {
-  font-family: "FF";
   font-size: 1.3rem;
 }
 .recherche__citation--italic {
   /* CSS declarations for `.block--modifier__element` */
   font-style: italic;
 }
-.recherche--blue {
-  color: darkblue;
+.recherche--center {
+  text-align: center;
 }
+.recherche--border {
+  background-color: lightblue;
+  border-radius: 5%;
+  border: 1px solid black;
+}/*# sourceMappingURL=recherche.css.map */
