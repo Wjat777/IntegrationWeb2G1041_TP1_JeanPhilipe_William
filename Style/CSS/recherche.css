@@ -1,9 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "FF";
-  src: url("/assets/fonts/finalf.ttf");
-  /*Copyright©  Juan Pablo Reyes Altamirano (https://www.fontspace.com/juan-pablo-reyes-altamirano/)*/
-}
 /*
 BEM – meaning block, element, modifier – is a front-end naming methodology thought up by the guys at Yandex. 
 It is a smart way of naming your CSS classes to give them more transparency and meaning to other developers.
@@ -12,34 +7,21 @@ of developers on larger projects that might last a while.
 */
 .recherche {
   /* CSS declarations for `.block` */
-  background-color: #ddaa77;
+  text-align: center;
+  font-family: "FF";
 }
 .recherche__citation {
-  background-color: #99bbee;
-  font-family: "FF";
-  justify-content: space-evenly;
-  align-content: space-around;
-  margin: 3rem;
+  font-size: 1.3rem;
 }
 .recherche__citation--italic {
   /* CSS declarations for `.block--modifier__element` */
   font-style: italic;
 }
-.recherche--blue {
-  color: darkblue;
-}
-
-.recherche1 {
-  margin: 0 auto;
-  width: 40%;
+.recherche--center {
   text-align: center;
 }
-
-.btn-rechercher {
-  width: 8rem;
-  margin: 1rem;
-}
-
-cite {
-  font-size: 1.5rem;
+.recherche--border {
+  background-color: lightblue;
+  border-radius: 5%;
+  border: 1px solid black;
 }/*# sourceMappingURL=recherche.css.map */

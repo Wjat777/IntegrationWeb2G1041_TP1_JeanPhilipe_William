@@ -1,18 +1,12 @@
-@import "constants";
 @import "mixim_bem";
 
 .recherche {
   /* CSS declarations for `.block` */
 
-  background-color: $bloc-color;
-
+  text-align: center;
+  font-family: "FF";
   @include element("citation") {
-    background-color: $citation-color;
-    font-family: "FF";
-
-    justify-content: space-evenly;
-    align-content: space-around;
-    margin: 3rem;
+    font-size: 1.3rem;
 
     @include modifier("italic") {
       /* CSS declarations for `.block--modifier__element` */
@@ -20,21 +14,13 @@
     }
   }
 
-  @include modifier("blue") {
-    color: darkblue;
+  @include modifier("center") {
+    text-align: center;
   }
-}
 
-.recherche1 {
-  margin: 0 auto;
-  width: 40%;
-  text-align: center;
-}
-.btn-rechercher {
-  width: 8rem;
-  margin: 1rem;
-}
-
-cite {
-  font-size: 1.5rem;
+  @include modifier("border") {
+    background-color: lightblue;
+    border-radius: 5%;
+    border: 1px solid black;
+  }
 }
